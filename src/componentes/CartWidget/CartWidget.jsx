@@ -1,6 +1,6 @@
 import './CartWidget.css'
-
 import React from 'react'
+
 
 const CartWidget = () => {
 

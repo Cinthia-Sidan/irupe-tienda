@@ -1,11 +1,13 @@
+import { Grid } from "@mui/material"
 import Item from "../Item/Item"
 
 //con el operador spread puedo traer todos los datos del item sin escribirlos directamente
-const ItemList = ({productos}) => {
+const ItemList = ({ productos }) => {
   return (
-    <div>
-        {productos.map(prod => <Item key={prod.id} {...prod}/>)}
-    </div>
+
+    <Grid container spacing={5}>
+      {productos.map(prod => <Item key={prod.id} {...prod} />)}
+    </Grid>
   )
 }
 

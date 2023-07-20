@@ -2,12 +2,13 @@ import { useState, useEffect } from "react"
 import ItemList from "../ItemList/ItemList"
 import { getProductos, getProductosCategoria } from "../../asyncmock"
 import { useParams } from "react-router-dom"
+import { Container } from "@mui/material"
 
 
 const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
 
-  const {idCategoria} = useParams();
+  const { idCategoria } = useParams();
 
   useEffect(() => {
     const funcionProductos = idCategoria ? getProductosCategoria : getProductos;
@@ -20,7 +21,10 @@ const ItemListContainer = () => {
   return (
     <div>
       <h3> Mis Productos</h3>
-      <ItemList productos={productos} />
+      <Container>
+        <ItemList productos={productos} />
+      </Container>
+
     </div>
 
   )
