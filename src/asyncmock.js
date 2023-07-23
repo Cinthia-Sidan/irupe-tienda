@@ -1,8 +1,8 @@
 const misProductos = [
-    {id:"1", nombre: "Argollas Acero", precio: 900, img: "../src/assets/img/argollas.jpg" , idCat:"1"},
-    {id:"2", nombre: "Aros Acero", precio: 900, img: "../src/assets/img/aros.jpg" , idCat:"1"},
-    {id:"3", nombre: "Pulsera", precio: 900, img: "../src/assets/img/cartucheras.jpg" , idCat:"1"},
-    {id:"4", nombre: "PortaSube", precio: 900, img: "../src/assets/img/cartucheras.jpg" , idCat:"2"},
+    {id:"1", nombre: "Argollas Acero", precio: 900, img: "../src/assets/img/argollas.jpg" , idCat:"1" , stock:10},
+    {id:"2", nombre: "Aros Acero", precio: 900, img: "../src/assets/img/aros.jpg" , idCat:"1" , stock:10},
+    {id:"3", nombre: "Pulsera", precio: 900, img: "../src/assets/img/cartucheras.jpg" , idCat:"1" , stock:10},
+    {id:"4", nombre: "PortaSube", precio: 900, img: "../src/assets/img/cartucheras.jpg" , idCat:"2" , stock:10},
 ]
 
 export const getProductos = () => {
